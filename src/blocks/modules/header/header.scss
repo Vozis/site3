@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    min-height: 100px;
     gap: 20px;
     padding: 10px 0;
 
@@ -18,17 +18,17 @@
 
   &__logo {
     z-index: 10;
-    margin-left: auto;
   }
 
   &__menu {
+    &._active {
+    }
   }
 
   &__btn {
   }
 
   &__social {
-    margin-left: auto;
   }
 }
 
@@ -64,15 +64,11 @@
     padding-left: $containerPadding;
     padding-right: $containerPadding;
     background-color: transparent;
-    display: none;
-
     @include media-breakpoint-down(sm) {
     }
 
     &._active {
-      display: block;
       transform: translateY(0);
-      background-color: rgba($color: #fff, $alpha: 0.9);
     }
   }
 

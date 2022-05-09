@@ -1,0 +1,30 @@
+.btn {
+  background-color: $title-color;
+  border: none;
+  border-radius: 21px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  color: #fffff0;
+  cursor: pointer;
+
+  &--black {
+    background-color: $title-color;
+    min-width: 160px;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid rgba(#454647, 0.5);
+    color: #8f8d8d;
+    padding: 6px 16px;
+  }
+
+  &--tag {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0 16px;
+  }
+}

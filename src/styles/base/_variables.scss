@@ -1,0 +1,56 @@
+// Grid breakpoints
+// для media-запросов
+
+$grid-breakpoints: (
+  xs: 0,
+  s: 375px,
+  sm: 540px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+// scss-docs-end grid-breakpoints
+
+// ============================================================================
+
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+
+// ============================================================================
+
+// Container padding
+
+$containerWidth: 1200;
+$containerPadding: 15;
+$maxWidth: 1920;
+
+// ============================================================================
+
+// Colors
+
+$primary-color: #070a1b;
+$secondary-color: #c1a1d2;
+
+$title-color: #f402a2;
+$text-color: #fff;
+
+$button-color: #f402a2;
+
+// ============================================================================
+
+// $img-path: '../img';
+// $style-path: './src/blocks';
+
+// ============================================================================
+
+// Fonts
+
+$fontFamily: "Corporate", sans-serif;
+
+%title-font {
+  font-family: $fontFamily;
+  font-weight: 700;
+}
+
+// ============================================================================

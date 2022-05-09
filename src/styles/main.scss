@@ -1,0 +1,52 @@
+// Переменные, миксины, функции
+@import "base/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/helpers";
+
+// ============================================================================
+
+// CSS-файлы библиотек
+@import "vendor/libs";
+
+// ============================================================================
+
+// Основное
+@import "base/fonts";
+@import "base/general";
+@import "base/reset";
+
+// ============================================================================
+
+// БЭМ-блоки
+@import "../blocks/modules";
+
+// ============================================================================
+
+// Общие компоненты
+@import "../blocks/components";
+
+// ============================================================================
+
+// media - запросы
+@import "media/media";
+
+// ============================================================================
+
+// Тип контейнера
+@import "helpers/containersBootstrap";
+// @import "helpers/containerCustom";
+
+// ============================================================================
+
+//Шрифты из Google Fonts
+// &display=swap
+//&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+
+// ============================================================================
+
+//Иконочные шрифты
+@import "helpers/icons";
+
+@import "helpers/fontawesome";

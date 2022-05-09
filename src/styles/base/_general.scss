@@ -1,0 +1,91 @@
+//  Прижатие footer
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+  // padding: 90px 0px 0px 0px;
+
+  @include media-breakpoint-down(sm) {
+    // padding: 30px 0px 0px 0px;
+  }
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+// ============================================================================
+
+// Body
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $fontFamily;
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 16px;
+  color: #fff;
+  min-width: 300px;
+  background: $primary-color;
+}
+
+// ============================================================================
+
+.hidden {
+  display: none !important;
+}
+
+// ============================================================================
+
+// Служебные классы
+
+// ============================================================================
+
+// Общие классы
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  &__item {
+  }
+
+  &__link {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: inherit;
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+
+    &::before {
+      font-size: 20px;
+      line-height: 40px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

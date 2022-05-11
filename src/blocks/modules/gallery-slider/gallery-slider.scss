@@ -1,0 +1,49 @@
+.gallery-slider {
+  margin: 0px 0px 150px 0px;
+
+  @include media-breakpoint-down(lg) {
+    margin: 0px 0px 100px 0px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: 0px 0px 75px 0px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0px 0px 50px 0px;
+  }
+
+  &__inner {
+    position: relative;
+    padding: 0px 0px 25px 0px;
+  }
+  &__item {
+    margin: 0px 30px;
+  }
+
+  &__img {
+  }
+
+  &__arrow {
+    padding: 0;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  &__arrow--prev {
+    transform: translateX(-80px);
+  }
+
+  &__arrow--next {
+    transform: translateX(30px);
+  }
+}
+
+.slick-track {
+  margin-left: -40px;
+}

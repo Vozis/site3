@@ -1,0 +1,72 @@
+.interior-exterior {
+  margin: 0px 0px 100px 0px;
+
+  @include media-breakpoint-down(md) {
+    margin: 0px 0px 75px 0px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0px 0px 50px 0px;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-areas:
+      "title imgbig imgbig imgbig"
+      "title text . img";
+    grid-template-columns: 255px 255px auto 330px;
+    grid-template-rows: auto auto;
+    column-gap: 44px;
+    row-gap: 40px;
+
+    @include media-breakpoint-down(xl) {
+      grid-template-columns: 255px 255px auto 300px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__cell-title {
+    grid-area: title;
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__cell-text {
+    grid-area: text;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__cell-imgbig {
+    grid-area: imgbig;
+  }
+
+  &__img {
+  }
+
+  &__img--radius {
+    border-radius: 100px 0 100px 0;
+  }
+
+  &__cell-img {
+    grid-area: img;
+    display: flex;
+    align-items: flex-end;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}

@@ -3,6 +3,9 @@
   font-size: 18px;
   line-height: calc(24 / 18 * 100%);
   color: $title-color;
+  @extend %title-font;
+  text-transform: uppercase;
+  margin: 0px 0px 25px 0px;
 
   @include media-breakpoint-down(sm) {
     font-size: 14px;
@@ -11,9 +14,10 @@
 
 .text {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 120%;
   color: $text-color;
+  margin: 0px 0px 25px 0px;
 }
 
 // .title-small {

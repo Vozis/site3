@@ -1,0 +1,46 @@
+.premier {
+  margin: 0px 0px 150px 0px;
+
+  @include media-breakpoint-down(lg) {
+    margin: 0px 0px 100px 0px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: 0px 0px 75px 0px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0px 0px 50px 0px;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 60px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__img {
+    margin: 0px 0px 25px 0px;
+  }
+
+  &__img--radius {
+    border-radius: 284px 0 0 0;
+    margin: 0px 0px 35px 0px;
+
+    @include media-breakpoint-down(md) {
+      border-radius: 200px 0 0 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      border-radius: 150px 0 0 0;
+    }
+  }
+}
